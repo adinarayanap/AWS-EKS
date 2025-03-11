@@ -170,12 +170,19 @@ Edit the Route Table and add a route with the destination 0.0.0.0/0 (all traffic
 By setting up an Internet Gateway and updating the Route Tables, you provide internet access to your EKS worker nodes, enabling them to interact with external resources like container registries and external services.
 
 Configuring IAM Policies
-Identity and Access Management (IAM) is a service in AWS that allows you to manage access to AWS resources securely. IAM policies define permissions that specify what actions are allowed or denied on specific AWS resources. For your EKS cluster, you'll need to configure IAM policies to grant necessary permissions to your worker nodes and other resources. Here's how to do it:
+Identity and Access Management (IAM) is a service in AWS that allows you to manage access to AWS resources securely. IAM policies define permissions that specify 
+what actions are allowed or denied on specific AWS resources. For your EKS cluster, you'll need to configure IAM policies to grant necessary permissions to your worker nodes and other resources. Here's how to do it:
 
 Create a Custom IAM Policy:
 
 Go to the AWS Management Console and navigate to the IAM service.
 Click on "Policies" in the left-hand navigation pane.
+
+
+
+
+![image](https://github.com/user-attachments/assets/9f730572-57c2-4950-8c4e-27427ac375f3)
+
 Click on "Create policy."
 Choose "JSON" as the policy language and define the permissions required for your EKS cluster. For example, you might need permissions for EC2 instances, Auto Scaling, Elastic Load Balancing, and accessing ECR (Elastic Container Registry).
 Attach the IAM Policy to IAM Roles:
