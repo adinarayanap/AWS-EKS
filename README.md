@@ -181,7 +181,7 @@ Click on "Policies" in the left-hand navigation pane.
 
 
 
-![image](https://github.com/user-attachments/assets/9f730572-57c2-4950-8c4e-27427ac375f3)
+
 
 Click on "Create policy."
 Choose "JSON" as the policy language and define the permissions required for your EKS cluster. For example, you might need permissions for EC2 instances, Auto Scaling, Elastic Load Balancing, and accessing ECR (Elastic Container Registry).
@@ -197,3 +197,9 @@ The IAM role allows the worker nodes to authenticate with the EKS cluster and ac
 By configuring IAM policies and associating them with IAM roles, you grant specific permissions to your EKS worker nodes, ensuring they can interact with AWS resources as needed while maintaining security and access control.
 
 By completing these steps, your AWS environment is ready to host an Amazon EKS cluster. You can proceed with creating an EKS cluster using the AWS Management Console or AWS CLI as described in section 3.
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/9f730572-57c2-4950-8c4e-27427ac375f3)
